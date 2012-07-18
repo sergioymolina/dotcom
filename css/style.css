@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+::-moz-selection { background: #FE7679;}
+::selection { background: #FE7679;}
+
+body {
+background:url(../img/tiny_grid.png);
+font-family: 'Open Sans', 'Helvetica';
+color:#888888;
+text-shadow:#DDDDDD 2px 1px 2px;
+line-height: 30px;
+}
+
+
+img { width:75px;  }
+			@media screen and (max-width:800px) { 
+			    
+			    img { width:64px; }
+			}
+			@media screen and (max-width:400px) { 
+			 
+			    img { width:48px; }
+				
+				@media screen and (max-width:320px) { 
+			 
+			    img { width:32px; }
+img {transition:all .2s linear; -o-transition:all .2s linear; -moz-transition:all .2s linear; -webkit-transition:all .2s linear; }
+				
+				
+			}
+
+
+h1 {
+font-family: 'CoolveticaRg-Regular';
+font-size:60px;
+color: #222;
+margin-top:5px;
+margin-bottom:10px;
+text-shadow: #BBBBBB 2px 1px;
+  -webkit-transition: all 0.5s ease-out;
+       -moz-transition: all 0.5s ease-out;
+         -o-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+}
+
+h1:hover {
+color:#BBBBBB;
+ text-shadow: 1px 1px #222, 2px 2px #222, 3px 3px #222, 4px 4px #222, 5px 5px #222, 6px 6px #222, 7px 7px #222, 8px 8px #222;
+    -webkit-transition: all 0.5s ease-out;
+       -moz-transition: all 0.5s ease-out;
+         -o-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+}
+
+h2 {
+font-family:'Museo-700';
+font-size: 30px;
+color:#888888;
+margin-top:10px;
+
+}
+
+.container {
+width: 70%;
+height: 50%;
+padding-top: 2%;
+padding-left: 7%;
+margin-left: 10%;
+}
+
+.container_img {
+padding-left: 10%;
+}
+
+
+.hovering {opacity:0.2;}
+.hovering:hover {
+opacity:1;  
+-webkit-transition-property: opacity; -webkit-transition-duration: 300ms; /*Tiempo de la transición varios navegadores*/
+-moz-transition-property: opacity; -moz-transition-duration: 300ms; /*Tiempo de la transición para Firefox*/
+}
